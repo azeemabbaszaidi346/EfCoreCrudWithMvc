@@ -1,0 +1,34 @@
+﻿@model WebApplication3.Models.Employee
+@{
+}
+
+<div class="row">
+    <div class="col-5 offset-5">
+        <form asp-action="Create" asp-controller="Employee" method="post">
+            <div class="form-group">
+                <label asp-for="Name"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Gender"></label>
+                <input asp-for="Gender" class="form-control" />
+                <span asp-validation-for="Gender"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Address"></label>
+                <input asp-for="Address" class="form-control" />
+                <span asp-validation-for="Address"></span>
+            </div>
+            <div class="form-group">
+                <button type ="Submit" class=" btn btn-success">Submit</button>
+            </div>
+        </form>
+
+    </div>
+</div>
